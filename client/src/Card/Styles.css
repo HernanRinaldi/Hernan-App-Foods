@@ -1,0 +1,39 @@
+/* ----------STYLES---------- */
+.app{
+    text-decoration: none;
+}
+.card{
+    text-decoration: none;
+}
+
+.img-card{
+    height: 7rem;
+    width: 12em;
+    border-radius: 10px;
+    margin: 4px 4px 4px 4px;
+    
+}
+
+.text-diets{
+    
+    font-size: small;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: rgb(249, 245, 245);
+    text-decoration: none;
+}
+
+.text-diets:hover{
+    text-decoration: none;
+    font-size: small;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: rgb(187, 60, 60);
+    text-decoration: none;  
+}
+
+
+.title-card{
+    color:rgb(176, 207, 234);
+    line-height: 1em;
+}

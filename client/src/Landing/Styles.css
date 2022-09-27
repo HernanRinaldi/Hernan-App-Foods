@@ -1,0 +1,80 @@
+/*----------------- BUTTON ----------------------*/
+
+.button-landing {
+    --color: #0b671c;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid var(--color);
+    transition: color 0.8s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 18px;
+    font-weight: 500;
+    color: var(--color);
+    cursor: pointer; 
+    background: #6aa708;
+  }
+  
+   .button-landing:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  } 
+   
+  .button-landing:hover {
+    color: #cbe505;
+  }
+  
+  .button-landing:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .button-landing:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .button-landing:active:before {
+    background: #3a0ca3;
+    transition: background 3s;
+  }  
+  /*------------- TITLE -------------------*/
+   .title-landing {
+    color: #cbe505;
+  }
+
+  
+  /*------------- TEXT -------------------*/
+  /* .text-landing {
+    color: #f0680e;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  } */
+  /*------------- TEXT -------------------*/
+  /* .gift-landing {
+    background-image: url("../Landing/food-fantasia2.jpg");
+  } */
+  /* .grid-container {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 100px;
+  }
+  .card-text {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    height: 180px;
+    line-height: 2em;
+    border: 2px double green;
+  }
+   */

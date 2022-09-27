@@ -1,0 +1,111 @@
+/*---------------STYLES DETAIL-----------------*/
+
+   .contenedor {
+    width: 600px;       
+    height: auto;
+    position: absolute;
+    top:3%;
+    left: 28%;           
+
+    
+
+    background: #5b8418;
+    border: 2px solid #ff5507;
+    box-shadow: 2px 2px 15px #000000 inset;
+    
+    
+   
+    align-items: center;
+    justify-content: center;
+    font-family: "Pacifico";
+    border-radius: 12px;
+   
+    margin-right: 0.2em;
+    line-height: 0.3em;
+   
+  }
+  
+  .contenedor:hover {
+    
+    box-shadow: 2px 2px 15px #ff5507 inset;
+  }
+  /*--------------button----------------*/
+
+  .button-detail {
+    --color: #ab3b11;
+    font-family: inherit;
+    display: inline-block;
+    width: 7em;
+    height: 2em;
+    line-height: 2.5em;
+    margin: 20px 10px 10px 10px;
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid var(--color);
+    transition: color 0.8s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 12px;
+    font-weight: 300;
+    color: var(--color);
+    padding-top: 0px;
+    cursor: pointer;
+  }
+  
+  .button-detail:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .button-detail:hover {
+    color: #fff;
+  }
+  
+  .button-detail:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .button-detail:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .button-home:active:before {
+    background: #3a0ca3;
+    transition: background 3s;
+  }
+  .img-detail{
+    border-radius: 140px;
+    margin-top: 8px;
+  }
+  .Summary-detail{
+    line-height: 0.3em;
+  }
+  
+  .style-steps{
+    color: #f9f7f6;
+    line-height: 0.8em;
+    
+  }
+  h3{
+    color: #39241f;
+  }
+  .view-diet{
+    color: #f9f7f6;
+    justify-content: center;
+    
+  }
+  .summary-detail{
+    line-height: 0.9em;
+    color: white;
+   
+   
+  }
+

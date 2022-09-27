@@ -1,0 +1,171 @@
+/*-----------------------------------------------*/
+
+ .button-form {
+    --color: #2dac4d;
+    font-family: inherit;
+    display: inline-block;
+    width: 5em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid var(--color);
+    transition: color 0.8s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 12px;
+    font-weight: 200;
+    color: var(--color);
+    cursor: pointer;
+  }
+  
+  .button-form:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .button-form:hover {
+    color: #fff;
+  }
+  
+  .button-form:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .button-form:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .button-form:active:before {
+    background: #3a0ca3;
+    transition: background 3s;
+  } 
+  
+  /*---------------------------INPUT-------------------------*/
+  .input-form {
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 12px;
+    background-image: linear-gradient(120deg, #bbd2d3, #f76410);
+    color: white;
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+    max-width: 170px;
+    margin-top: 10px;
+  }
+  
+  .input-form:focus {
+    outline-color: rgb(94, 238, 159);
+  }
+  
+  /*------------------------FORM CONTAINER--------------------------*/
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 400px;
+    background-color: #e8bb52;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid rgb(221, 160, 160);
+  }
+  
+  .error-form {
+    color: red;
+    
+    margin: 20px ;
+    border-radius: 5px;
+  }
+  .Health-score{
+    color: white
+  }
+.range{
+  background-color: red;
+}
+
+  /* .label {
+    color: white;
+  }
+  
+  .h1 {
+    color: white;
+  }
+  
+  .select {
+    background-color: rgb(154, 212, 221);
+    border-radius: 10px;
+    border: 2px double rgb(194, 153, 153);
+    color: white;
+  } */
+  
+  .value {
+    color: white;
+  } 
+  
+  /* .value-select {
+    color: white;
+  }   */
+  /*-----------------------------------------*/
+  /* .select-season {
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    background-image: linear-gradient(120deg, #bbd2d3, #e65050);
+    color: white;
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+    max-width: 190px;
+    background-color: #e65050;
+  }
+  
+  .select-season:focus {
+    outline-color: rgb(94, 238, 159);
+  }  */
+  /*------------------------------------------------*/
+  .select-diets {
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 12px;
+    background-image: linear-gradient(120deg, #bbd2d3, #f76410);
+    color: white;
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+    max-width: 280px;
+    background-color: #f76410;
+  }
+  
+  .select-diets:focus {
+    outline-color: rgb(94, 238, 159);
+  }
+  
+  /*-------------------BUTTON DELETE----------------*/
+  
+  .button-delete {
+    background-color: crimson;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .important{
+    color:rgb(84, 23, 225);
+  }
+  .title-form{
+    color:#f76410;
+  }
+  

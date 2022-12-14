@@ -168,7 +168,6 @@ return (
       
       <input
       className="input-form" 
-      autoFocus
       placeholder="Title..."
       type="text" value={input.title} 
       name="title" 

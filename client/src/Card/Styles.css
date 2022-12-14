@@ -7,33 +7,22 @@
 }
 
 .img-card{
-    height: 7rem;
-    width: 12em;
-    border-radius: 10px;
-    margin: 4px 4px 4px 4px;
-    
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+
 }
 
 .text-diets{
-    
+    font-family:  Georgia, Times, 'Times New Roman', serif;
     font-size: small;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    color: rgb(249, 245, 245);
+    color: rgb(82, 67, 148);
     text-decoration: none;
 }
-
-.text-diets:hover{
-    text-decoration: none;
-    font-size: small;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    color: rgb(187, 60, 60);
-    text-decoration: none;  
-}
-
 
 .title-card{
-    color:rgb(176, 207, 234);
+    color: rgb(46, 22, 154);
     line-height: 1em;
+    padding-left: 1px;
+    padding-right: 1px;
 }

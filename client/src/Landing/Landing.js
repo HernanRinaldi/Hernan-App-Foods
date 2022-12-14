@@ -8,21 +8,13 @@ export default function Landing(){
     return(
            
         <div className='landing'>
-            
-            <div className='gift-landing'></div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
             <br></br>
             <br></br>
             <h1 className='title-landing'> Put on your apron and let's get started </h1>
-
             <Link  to='/home' >
             <button className='button-landing'>Let's cook 
             </button>
             </Link>
-            
         </div>
 
     )

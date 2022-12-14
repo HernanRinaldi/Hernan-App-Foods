@@ -1,80 +1,42 @@
 /*----------------- BUTTON ----------------------*/
 
+.title-landing{
+  text-align: center;
+  color: #f76410;
+}
+
+.button-landing{
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  position: relative;
+  overflow: hidden;
+
+}
+
 .button-landing {
-    --color: #0b671c;
+  --color: #ff5507;
     font-family: inherit;
     display: inline-block;
-    width: 8em;
-    height: 2.6em;
-    line-height: 2.5em;
-    margin: 20px;
+    width: 6rem;
+    height: 2rem;
+    line-height: 2.5rem;
+    margin: 15px;
     position: relative;
     overflow: hidden;
     border: 1.5px solid var(--color);
     transition: color 0.8s;
     z-index: 1;
     font-size: 17px;
-    border-radius: 18px;
-    font-weight: 500;
+    border-radius: 6px;
+    font-weight: 300;
     color: var(--color);
-    cursor: pointer; 
-    background: #6aa708;
+    padding-top: 0px;
+    margin-left: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px #00000040 inset;
   }
-  
-   .button-landing:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-  } 
-   
-  .button-landing:hover {
-    color: #cbe505;
+  .button-landing:hover{
+    color: #ff5507;
+    box-shadow: 2px 2px 15px #f8a077fa inset;
   }
-  
-  .button-landing:before {
-    top: 100%;
-    left: 100%;
-    transition: all 0.7s;
-  }
-  
-  .button-landing:hover:before {
-    top: -30px;
-    left: -30px;
-  }
-  
-  .button-landing:active:before {
-    background: #3a0ca3;
-    transition: background 3s;
-  }  
-  /*------------- TITLE -------------------*/
-   .title-landing {
-    color: #cbe505;
-  }
-
-  
-  /*------------- TEXT -------------------*/
-  /* .text-landing {
-    color: #f0680e;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  } */
-  /*------------- TEXT -------------------*/
-  /* .gift-landing {
-    background-image: url("../Landing/food-fantasia2.jpg");
-  } */
-  /* .grid-container {
-    display: grid;
-    grid-template-columns: 20% auto 20%;
-    grid-template-rows: 100px;
-  }
-  .card-text {
-    background-color: antiquewhite;
-    border-radius: 20px;
-    height: 180px;
-    line-height: 2em;
-    border: 2px double green;
-  }
-   */

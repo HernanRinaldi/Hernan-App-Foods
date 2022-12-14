@@ -1,8 +1,10 @@
 body {
-  background-image: url(../src/Landing/food-fantasia8.jpg);
+  background: linear-gradient(rgb(216, 212, 212), rgb(230, 218, 218), rgb(181, 203, 203));
+  background-image: url(../src/textura_2.webp);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  
 }
 

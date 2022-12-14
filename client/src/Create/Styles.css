@@ -1,171 +1,121 @@
 /*-----------------------------------------------*/
 
  .button-form {
-    --color: #2dac4d;
+  --color: #ff5507;
     font-family: inherit;
     display: inline-block;
-    width: 5em;
-    height: 2.6em;
-    line-height: 2.5em;
-    margin: 20px;
+    width: 6rem;
+    height: 2rem;
+    line-height: 2.5rem;
+    margin: 15px;
     position: relative;
     overflow: hidden;
     border: 1.5px solid var(--color);
     transition: color 0.8s;
     z-index: 1;
     font-size: 17px;
-    border-radius: 12px;
-    font-weight: 200;
+    border-radius: 6px;
+    font-weight: 300;
     color: var(--color);
+    padding-top: 0px;
+    margin-left: 3px;
     cursor: pointer;
-  }
-  
-  .button-form:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-  }
-  
-  .button-form:hover {
-    color: #fff;
-  }
-  
-  .button-form:before {
-    top: 100%;
-    left: 100%;
-    transition: all 0.7s;
-  }
-  
-  .button-form:hover:before {
-    top: -30px;
-    left: -30px;
-  }
-  
-  .button-form:active:before {
-    background: #3a0ca3;
-    transition: background 3s;
-  } 
+    box-shadow: 2px 2px 15px #00000040 inset;
+ }
+ .button-form:hover {
+  color: #ff5507;
+  box-shadow: 2px 2px 15px #f8a077fa inset;
+}
+
   
   /*---------------------------INPUT-------------------------*/
   .input-form {
-    border: 3px solid rgb(127, 170, 170);
-    border-radius: 12px;
-    background-image: linear-gradient(120deg, #bbd2d3, #f76410);
-    color: white;
-    cursor: pointer;
-    padding: 7px 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 1.6rem;
+    width: 12rem;
+    --color: #f0680e;
     font-size: 17px;
-    transition: all 1s;
-    max-width: 170px;
+    border-radius: 6px;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid #f0680e;
+    border-radius: 6px;
+    color: var(--color);
+    cursor: pointer;
     margin-top: 10px;
   }
   
-  .input-form:focus {
-    outline-color: rgb(94, 238, 159);
-  }
   
   /*------------------------FORM CONTAINER--------------------------*/
   .form-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 400px;
-    background-color: #e8bb52;
+    justify-content: center;
     width: 400px;
-    border-radius: 20px;
-    border: 2px solid rgb(221, 160, 160);
+    border-radius: 8px;
+    margin-top:20px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1.5px solid #f0680e;
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    box-shadow: 2px 2px 15px #00000040 inset;
   }
   
   .error-form {
     color: red;
-    
     margin: 20px ;
-    border-radius: 5px;
   }
   .Health-score{
-    color: white
+    color: #f0680e
   }
 .range{
   background-color: red;
 }
 
-  /* .label {
-    color: white;
-  }
-  
-  .h1 {
-    color: white;
-  }
-  
-  .select {
-    background-color: rgb(154, 212, 221);
-    border-radius: 10px;
-    border: 2px double rgb(194, 153, 153);
-    color: white;
-  } */
-  
-  .value {
-    color: white;
-  } 
-  
-  /* .value-select {
-    color: white;
-  }   */
-  /*-----------------------------------------*/
-  /* .select-season {
-    border: 3px solid rgb(127, 170, 170);
-    border-radius: 20px;
-    background-image: linear-gradient(120deg, #bbd2d3, #e65050);
-    color: white;
-    cursor: pointer;
-    padding: 7px 12px;
-    font-family: Arial, Helvetica, sans-serif;
+.value {
+  color: #f0680e
+} 
+
+/*------------------------------------------------*/
+.select-diets {
+  --color: #ff5507;
+    font-family: inherit;
+    display: inline-block;
+    width: 12.3rem;
+    height: 2rem;
+    line-height: 2.5rem;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid var(--color);
+    transition: color 0.8s;
+    z-index: 1;
     font-size: 17px;
-    transition: all 1s;
-    max-width: 190px;
-    background-color: #e65050;
-  }
-  
-  .select-season:focus {
-    outline-color: rgb(94, 238, 159);
-  }  */
-  /*------------------------------------------------*/
-  .select-diets {
-    border: 3px solid rgb(127, 170, 170);
-    border-radius: 12px;
-    background-image: linear-gradient(120deg, #bbd2d3, #f76410);
-    color: white;
+    border-radius: 6px;
+    font-weight: 300;
+    color: var(--color);
+    padding-top: 0px;
+    margin-left: 5px;
     cursor: pointer;
-    padding: 7px 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    transition: all 1s;
-    max-width: 280px;
-    background-color: #f76410;
-  }
-  
-  .select-diets:focus {
-    outline-color: rgb(94, 238, 159);
   }
   
   /*-------------------BUTTON DELETE----------------*/
   
   .button-delete {
     background-color: crimson;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
   }
   .important{
-    color:rgb(84, 23, 225);
+    color:crimson;
   }
   .title-form{
     color:#f76410;
   }
-  
+  .view-diet{
+    color:#f76410;
+  }

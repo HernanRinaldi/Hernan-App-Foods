@@ -34,7 +34,6 @@ export default function Search() {
         className="input-search"
         placeholder="Title..."
         type="text"
-        autoFocus
         onChange={(e) => handleOnChange(e)}
       ></input>
 

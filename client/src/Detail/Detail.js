@@ -11,8 +11,7 @@ import Loading from '../Loading/Loading';
 export default function Detail() {
   const dispatch = useDispatch();
   const { id } = useParams();
-  //console.log("este es el id: " + id);
-  
+
 //---------------------USEEFFECT------------------------//
   useEffect(() => {
     dispatch(filterById(id));
@@ -24,9 +23,7 @@ export default function Detail() {
 
 //----------------------STATE--------------------------//
   const data_detail = useSelector((state) => state.detail);
-  //console.log("aca el data_detail: ", data_detail)
-
-
+ 
 //-------------------------RETURN----------------------//
   return (
 <div className="contenedor" >
@@ -38,7 +35,7 @@ export default function Detail() {
 </div>
 {/*-------------------------TITLE-------------------- */}
 <div>
- <h1> { data_detail?.title || data_detail[0]?.title } </h1>   
+ <h1 className="title-detail" > { data_detail?.title || data_detail[0]?.title } </h1>   
 </div>
 {/*-------------------------DIETS-------------------- */}
 <div>
@@ -70,10 +67,5 @@ export default function Detail() {
   );
 }
 
-// {Array.isArray(steps) ? steps.map((ele) => {
-//   return (
-//       <p  key={ele.number}>{ele.number}: {ele.step}</p>
-//   )
-// }) : <p >{steps}</p>}
 
 

@@ -14,33 +14,17 @@
     transition: color 0.5s;
     z-index: 1;
     font-size: 14px;
-    border-radius: 18px;
+    border-radius: 8px;
     font-weight: 500;
     color: var(--color);
     cursor: pointer;
+    box-shadow: 2px 2px 15px #0000008d inset;
   }
-  .button-pagination:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-  }
-  
+
   .button-pagination:hover {
-    color: #fff;
+    color: #ff5507;
+    box-shadow: 2px 2px 15px #f8a077fa inset;
   }
   
-  .button-pagination:before {
-    top: 100%;
-    left: 100%;
-    transition: all 0.01s;
-  }
-  
-  .button-pagination:hover:before {
-    top: -30px;
-    left: -30px;
-  }
-  
+
+

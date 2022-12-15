@@ -23,7 +23,7 @@ export const getRecipes = ()=>{
     
     return async function( dispatch ){
         try {
-            const recipes = await axios.get( URL );
+            const recipes = await axios.get( "/recipes" );
             //console.log('info del back: ', recipes.data)
     
             return dispatch({
@@ -40,9 +40,7 @@ export const getRecipes = ()=>{
 export const search_title = function( payload ){
     try {
         return async function( dispatch ){
-            let title = await axios.get( URL2 + payload )
-
-            //console.log("title desde back: ", title.data )
+            let title = await axios.get( `/recipes?title=${payload}`)
             return dispatch({
                 type: SEARCH_TITLE,
                 payload: title.data
@@ -58,7 +56,7 @@ export const search_title = function( payload ){
 export const getDiets = ()=>{
     return async function(dispatch){
         try {
-            const diets_db = await axios.get( URL1 )
+            const diets_db = await axios.get( "/diets" )
         //console.log('info data base: ', diets_db.data)
 
         return dispatch({
@@ -88,7 +86,7 @@ export const createRecipe = function(payload){
     return async function(dispatch) {
 
         try {
-            const response = await axios.post( URL3 , payload)
+            const response = await axios.post( `/recipes/create/${payload}`)
             //console.log("info hacia el back: ", payload)
             return dispatch({
                 type: CREATE,

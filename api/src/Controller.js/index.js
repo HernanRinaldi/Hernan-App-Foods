@@ -12,9 +12,9 @@ const API1 = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${KEY}&ad
 //----------GET ALL RECIPES--------//
 const getAllRecipes = async (req, res) => {
   
-  const { title } = req.query;
+  const { title } = req.query; 
   
-  try {
+  try { 
     
     if(!title){  
   

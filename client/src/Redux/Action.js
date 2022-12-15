@@ -13,10 +13,10 @@ export const CLEAN_DETAIL = "CLEAN_DETAIL";
 export const SEARCH_TITLE = "SEARCH_TITLE";
 
 //-----------------------------URL-----------------------------//
-const URL =  "http://localhost:3001/recipes";
-const URL1 =  "http://localhost:3001/diets";
-const URL2 = "http://localhost:3001/recipes?title=";
-const URL3 =  "http://localhost:3001/recipes/create";
+const URL =  "/recipes";
+const URL1 =  "/diets";
+const URL2 = "/recipes?title=";
+const URL3 =  "/recipes/create";
 
 //-----------------------GET ALL RECIPES-----------------------//
 export const getRecipes = ()=>{
@@ -28,7 +28,7 @@ export const getRecipes = ()=>{
     
             return dispatch({
                 type: ALL_RECIPES,
-                payload: recipes.data
+                payload: recipes.data 
             })
         } catch (error) {
             console.log(error)
@@ -74,7 +74,7 @@ export const getDiets = ()=>{
 //---------------------------DETAIL----------------------------//
 export const filterById= function( id ){
     return async function( dispatch ){
-        const detail= await axios.get( `http://localhost:3001/recipes/${id}` )
+        const detail= await axios.get( `/recipes/${id}` )
         //console.log("detail en action: ",detail.data)
         return dispatch({
             type: FILTER_ID,

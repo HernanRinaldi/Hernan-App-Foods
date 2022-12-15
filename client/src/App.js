@@ -9,7 +9,8 @@ import Landing from './Landing/Landing';
 import Home from './Home/Home';
 import Create from './Create/Create';
 import Detail from './Detail/Detail';
-
+import axios from 'axios';
+axios.defaults.baseURL = 'http://localhost:3001/';
 //-----------------FUNCTION--------------//
 function App() {
   return (
